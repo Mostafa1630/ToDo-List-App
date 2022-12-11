@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-container{
+    width: 600px;
+    margin: 30px auto 0;
+    background-color: #f6f6f6;
+}
+.todo-container .add-task{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.todo-container .add-task input{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(255,255,255,0.3);
+    color: #fff;
+    width: calc(100% - 15px);
+    font-size: 20px;
+}
+.todo-container .add-task .plus{
+    position: absolute;
+    right: 12px;
+    width: 43px;
+    height: 43px;
+    background-color: #fff;
+    color: #009688;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 38px;
+    transition: transform 0.3s;
+}
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg);
+}
+.todo-container .taskes-content{
+    padding: 15px;
+}
+.todo-container .taskes-content .no-task-messege{
+    color: #777;
+    font-size: 15px;
+}
+.todo-container .taskes-content > span{
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.todo-container .taskes-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-container .taskes-content .task-box .delete{
+    float: right;
+    background-color: #E91E63;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.todo-container .taskes-content .task-box.finished{
+    text-decoration: line-through;
+}
+.task-stats{
+    overflow: hidden;
+    width: 600px;
+    margin: 10px auto;
+    font-size: 12px;
+}
+.task-stats .task-count,
+.task-stats .task-completed{
+    width: 50%;
+    padding: 10px;
+}
+.task-stats .task-count{
+    float: left;
+}
+.task-stats .task-completed{
+    float: right;
+    text-align: right;
+}
+.task-stats .task-count span,
+.task-stats .task-completed span{
+    padding: 1px 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.task-stats .task-count span{
+    background-color: #E91E63;
+}
+.task-stats .task-completed span{
+    background-color: #03A9f4;
+}
